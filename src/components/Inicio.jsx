@@ -11,8 +11,8 @@ export const Inicio = () => {
 
         <img
           className="inicio-hero__img"
-          src="/img/hero-sakura.jpg"
-          alt="Sakura restaurante"
+           src={process.env.PUBLIC_URL + "/img/hero-sakura.jpg"}
+           alt="Sakura restaurante"
         />
 
         <div className="inicio-hero__contenido">
@@ -112,7 +112,7 @@ export const Inicio = () => {
             {/* SUSHI */}
             <article className="inicio-platos__card">
               <div className="inicio-platos__card-image">
-                <img src="/img/sushi.jpg" alt="Sushi Variado" />
+                <img src={process.env.PUBLIC_URL + "/img/sushi.jpg"} alt="Sushi Variado" />
               </div>
 
               <div className="inicio-platos__card-body">
@@ -141,7 +141,7 @@ export const Inicio = () => {
             {/* RAMEN */}
             <article className="inicio-platos__card">
               <div className="inicio-platos__card-image">
-                <img src="/img/ramen.jpg" alt="Ramen Tradicional" />
+                <img src={process.env.PUBLIC_URL + "/img/ramen.jpg"} alt="Ramen Tradicional" />
               </div>
 
               <div className="inicio-platos__card-body">
@@ -170,7 +170,7 @@ export const Inicio = () => {
             {/* TEMPURA */}
             <article className="inicio-platos__card">
               <div className="inicio-platos__card-image">
-                <img src="/img/tempura.jpg" alt="Tempura de Camarón" />
+                <img src={process.env.PUBLIC_URL + "/img/tempura.jpg"} alt="Tempura de Camarón"/>
               </div>
 
               <div className="inicio-platos__card-body">
@@ -199,7 +199,7 @@ export const Inicio = () => {
             {/* MOCHI */}
             <article className="inicio-platos__card">
               <div className="inicio-platos__card-image">
-                <img src="/img/mochi.jpg" alt="Mochi Japonés" />
+                <img src={process.env.PUBLIC_URL + "/img/mochi.jpg"} alt="Mochi Japonés"/>
               </div>
 
               <div className="inicio-platos__card-body">
@@ -243,8 +243,8 @@ export const Inicio = () => {
 
         <img
           className="inicio-cta__img"
-          src="/img/cta-sakura.jpg"
-          alt="Restaurante Sakura"
+          src={process.env.PUBLIC_URL + "/img/cta-sakura.jpg"}
+         alt="Restaurante Sakura"
         />
 
         <div className="inicio-cta__contenido">
