@@ -1,0 +1,199 @@
+.carta {
+  flex: 1;
+}
+
+/* Header */
+
+.carta-header {
+  padding: 3rem 1.5rem;
+  background-color: #ffffff;
+}
+
+.carta-header__wrap {
+  max-width: 72rem;
+  margin: auto;
+  text-align: center;
+}
+
+.carta-header__title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .carta-header__title {
+    font-size: 2.25rem;
+  }
+}
+
+.carta-header__title-span--primary {
+  color: #111111;
+}
+
+.carta-header__title-span--accent {
+  color: #a00000;
+}
+
+.carta-header__subtitle {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+
+
+/* CATEGORIAS */
+
+.carta-categorias {
+  padding: 2rem 1.5rem 4rem;
+  background-color: rgba(249, 250, 251, 0.8);
+}
+
+.carta-categorias__wrap {
+  max-width: 72rem;
+  margin: auto;
+}
+
+.carta-categoria {
+  margin-bottom: 3.5rem;
+}
+
+.carta-categoria__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 1.5rem;
+}
+
+
+
+/* GRID */
+
+.carta-categoria__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .carta-categoria__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .carta-categoria__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+
+/* CARD */
+
+.carta-plato {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow:
+    0 10px 15px -3px rgba(0,0,0,0.1),
+    0 4px 6px -4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+
+
+/* IMAGEN */
+
+.carta-plato__image {
+  aspect-ratio: 4 / 2.2;
+  overflow: hidden;
+  background-color: #f3f4f6;
+}
+
+.carta-plato__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+
+/* BODY */
+
+.carta-plato__body {
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+
+
+/* HEADER PLATO */
+
+.carta-plato__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.carta-plato__name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111111;
+}
+
+.carta-plato__price-badge {
+  background-color: #a00000;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.2rem 0.55rem;
+  border-radius: 9999px;
+}
+
+
+
+/* DESCRIPCION */
+
+.carta-plato__description {
+  font-size: 0.82rem;
+  color: #6b7280;
+  margin-bottom: 0.2rem;
+}
+
+
+
+/* BOTON */
+
+.carta-plato__button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #c9a227;
+  color: #ffffff;
+
+  font-weight: 500;
+  padding: 0.5rem 0.9rem;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+
+  margin-top: auto; /* 🔥 alinea todos los botones */
+
+  transition: background-color 0.2s ease-in-out;
+}
+
+.carta-plato__button:hover {
+  background-color: #b08c1f;
+}
